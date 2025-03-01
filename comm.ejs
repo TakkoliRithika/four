@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Comments</title>
+    </head>
+    <body>
+        <h1>Comments</h1>
+        <ul>
+            <% for(let c of comments){ %>
+              <li><%= c.comment %> - <b><%= c.username %></b></li>
+              <% } %>  
+        </ul>
+        <a href="/comments/new">Go back</a>
+    </body>
+</html>
